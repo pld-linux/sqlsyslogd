@@ -1,4 +1,5 @@
 Summary:	syslogd to MySQL wrapper
+Summary(pl):	Program ³±czacy syslogd z baz± MySQL
 Name:		sqlsyslogd
 Version:	0.1
 Release:	1
@@ -8,12 +9,16 @@ Group:		Networking/Utilities
 Source0:	ftp://ftp.pld.org.pl/people/speedy/%{name}.tgz
 URL:		http://www.frasunek.com/sources/security/sqlsyslogd/
 BuildRequires:	mysql-devel
-Requires:	mysql-libs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 SQLSyslogd is simple syslogd to MySQL wrapper. It's invoked by syslogd
 from syslog.conf and redirects all messages to MySQL database.
+
+%description -l pl
+SQLSyslogd to prosty program ³±cz±cy syslogd z baz± MySQL. Jest
+uruchamiany przez syslogd z syslog.conf i przekierowuje wszystkie
+komunikaty do bazy MySQL.
 
 %prep
 %setup -q -n %{name}
@@ -25,6 +30,7 @@ from syslog.conf and redirects all messages to MySQL database.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sbindir}
+
 install sqlsyslogd $RPM_BUILD_ROOT%{_sbindir}
 
 %clean
@@ -32,5 +38,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_sbindir}/sqlsyslogd
 %doc INSTALL sqlsyslogd.sql
+%attr(755,root,root) %{_sbindir}/sqlsyslogd
