@@ -2,7 +2,8 @@ Summary:	syslogd to MySQL wrapper
 Name:		sqlsyslogd
 Version:	0.1
 Release:	1
-License:	GPL
+License:	BSD
+Vendor:		Przemyslaw Frasunek <venglin@freebsd.lublin.pl>
 Group:		Networking/Utilities
 Source0:	ftp://ftp.pld.org.pl/people/speedy/%{name}.tgz
 URL:		http://www.frasunek.com/sources/security/sqlsyslogd/
