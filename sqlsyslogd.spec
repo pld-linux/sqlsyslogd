@@ -7,6 +7,7 @@ License:	BSD
 Vendor:		Przemyslaw Frasunek <venglin@freebsd.lublin.pl>
 Group:		Networking/Utilities
 Source0:	ftp://ftp.pld.org.pl/people/speedy/%{name}.tgz
+# Source0-md5:	9cb7833f9fcc93df1a71fec23f096f58
 URL:		http://www.frasunek.com/sources/security/sqlsyslogd/
 BuildRequires:	mysql-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
