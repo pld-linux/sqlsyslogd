@@ -1,5 +1,5 @@
 Summary:	syslogd to MySQL wrapper
-Summary(pl):	Program ³±czacy syslogd z baz± MySQL
+Summary(pl):	Program ³±cz±cy syslogd z baz± MySQL
 Name:		sqlsyslogd
 Version:	0.1
 Release:	1
