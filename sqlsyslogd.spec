@@ -25,7 +25,7 @@ komunikaty do bazy MySQL.
 
 %build
 %{__cc} %{rpmcflags} %{rpmldflags} -lmysqlclient -DCONF=\"%{_sysconfdir}/sqlsyslogd.conf\" -o sqlsyslogd sqlsyslogd.c
-#%{__cc} %{rpmcflags} %{rpmldflags} -lmysqlclient -DCONF=\"/etc/sqlsyslogd.conf\" -o ntsyslogd ntsyslogd.c
+#%%{__cc} %{rpmcflags} %{rpmldflags} -lmysqlclient -DCONF=\"/etc/sqlsyslogd.conf\" -o ntsyslogd ntsyslogd.c
 
 %install
 rm -rf $RPM_BUILD_ROOT
