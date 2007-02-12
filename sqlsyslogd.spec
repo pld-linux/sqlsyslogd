@@ -1,5 +1,5 @@
 Summary:	syslogd to MySQL wrapper
-Summary(pl):	Program ³±cz±cy syslogd z baz± MySQL
+Summary(pl.UTF-8):   Program Å‚Ä…czÄ…cy syslogd z bazÄ… MySQL
 Name:		sqlsyslogd
 Version:	0.1
 Release:	1
@@ -16,8 +16,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 SQLSyslogd is simple syslogd to MySQL wrapper. It's invoked by syslogd
 from syslog.conf and redirects all messages to MySQL database.
 
-%description -l pl
-SQLSyslogd to prosty program ³±cz±cy syslogd z baz± MySQL. Jest
+%description -l pl.UTF-8
+SQLSyslogd to prosty program Å‚Ä…czÄ…cy syslogd z bazÄ… MySQL. Jest
 uruchamiany przez syslogd z syslog.conf i przekierowuje wszystkie
 komunikaty do bazy MySQL.
 
